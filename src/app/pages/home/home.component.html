@@ -1,0 +1,30 @@
+<div class="home-container">
+  <mat-card class="profile-card">
+    <mat-card-header>
+      <div mat-card-avatar class="profile-avatar">
+        <mat-icon>account_circle</mat-icon>
+      </div>
+      <mat-card-title>Your Name</mat-card-title>
+      <mat-card-subtitle>.NET Full Stack Developer</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="https://via.placeholder.com/400x200" alt="Profile background image">
+    <mat-card-content>
+      <p>
+        Brief bio about yourself. Passionate about technology, skilled in creating robust web applications.
+        Experienced in both frontend and backend development with a focus on .NET and Angular.
+      </p>
+      <h3>My Tech Stack:</h3>
+      <mat-chip-listbox aria-label="Tech stack">
+        <mat-chip *ngFor="let tech of techStack" selected>{{tech}}</mat-chip>
+      </mat-chip-listbox>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-flat-button color="primary" (click)="onViewProjects()">
+        <mat-icon>work</mat-icon> View Projects
+      </button>
+      <button mat-stroked-button color="accent" (click)="onContact()">
+        <mat-icon>email</mat-icon> Contact Me
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

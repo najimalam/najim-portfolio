@@ -1,0 +1,53 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  padding: 20px;
+  min-height: calc(100vh - 64px); /* Adjust 64px if your toolbar height is different */
+  box-sizing: border-box;
+}
+
+.profile-card {
+  max-width: 600px;
+  width: 100%;
+  margin-top: 20px; /* Add some margin from the top */
+}
+
+.profile-avatar mat-icon {
+  font-size: 40px; /* Make avatar icon larger */
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+
+mat-card-header {
+  display: flex;
+  align-items: center;
+}
+
+mat-card-image {
+  width: 100%;
+  max-height: 250px; /* Control image height */
+  object-fit: cover; /* Ensure image covers the area well */
+  margin-bottom: 16px;
+}
+
+mat-card-content h3 {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+mat-chip-listbox {
+  margin-bottom: 16px;
+}
+
+mat-card-actions {
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  padding: 16px;
+  gap: 8px; /* Add space between buttons */
+}
+
+mat-card-actions button mat-icon {
+  margin-right: 8px; /* Space between icon and text in button */
+}
